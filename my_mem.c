@@ -30,7 +30,7 @@ struct memory_manager_state {
      // size of the header)
     Block *free[MAX_OS_POW2];  
     Block *used[MAX_OS_POW2];  
-    int num_free[MAX_OS_POW2]; // count the index of *free and *used
+    int num_free[MAX_OS_POW2]; // count the blocks at a specific index
     int num_used[MAX_OS_POW2]; 
 } state;
 
